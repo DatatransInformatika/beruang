@@ -1,0 +1,11 @@
+{
+  "name": "beruang",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "@polymer/iron-flex-layout": "^3.0.1",
+    "@webcomponents/webcomponentsjs": "^2.0.0"
+  }
+}
