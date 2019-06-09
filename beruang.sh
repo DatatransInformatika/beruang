@@ -17,6 +17,14 @@ node_modules/@beruang/brown/*.js
 node_modules/@beruang/brown/**/*.js
 EOF`
 
+brownlabelsources=`cat <<EOF
+node_modules/@beruang/brown/brown-label/*.js
+EOF`
+
+browntabsources=`cat <<EOF
+node_modules/@beruang/brown/brown-tab/*.js
+EOF`
+
 mvpsources=`cat <<EOF
 node_modules/@beruang/mvp/*.js
 EOF`
@@ -63,6 +71,20 @@ polymer build --name beruang-es5-brown --js-compile --js-transform-modules-to-am
 --sources ${brownsources}
 }
 
+function build-es5-brown-label {
+rm -rf build/es5/node_modules/@beruang/brown/brown-label
+mkdir -p build/es5/src/node_modules/@beruang/brown/brown-label
+polymer build --name beruang-es5-brown-label --js-compile --js-transform-modules-to-amd --js-minify \
+--sources ${brownlabelsources}
+}
+
+function build-es5-brown-tab {
+rm -rf build/es5/node_modules/@beruang/brown/brown-tab
+mkdir -p build/es5/src/node_modules/@beruang/brown/brown-tab
+polymer build --name beruang-es5-brown-tab --js-compile --js-transform-modules-to-amd --js-minify \
+--sources ${browntabsources}
+}
+
 function build-es5-mvp {
 rm -rf build/es5/node_modules/@beruang/mvp
 mkdir -p build/es5/src/node_modules/@beruang/mvp
@@ -101,35 +123,6 @@ build-es5-theme
 build-es5-tool
 }
 
-function build-es5-home {
-rm -rf build/es5/src/home
-mkdir -p build/es5/src/home
-polymer build --name beruang-es5-home --js-compile --js-transform-modules-to-amd --js-minify \
---sources src/home/*.js
-}
-
-function build-es5-home2 {
-rm -rf build/es5/src/home2
-mkdir -p build/es5/src/home2
-polymer build --name beruang-es5-home2 --js-compile --js-transform-modules-to-amd --js-minify \
---sources src/home2/*.js
-}
-
-function build-es5-home3 {
-rm -rf build/es5/src/home3
-mkdir -p build/es5/src/home3
-polymer build --name beruang-es5-home3 --js-compile --js-transform-modules-to-amd --js-minify \
---sources src/home3/*.js
-}
-
-function build-es5-app {
-rm -rf build/es5/index.html build/es5/manifest.json
-mkdir -p build/es5
-polymer build --name beruang-es5-app --js-compile --js-transform-modules-to-amd --js-minify \
---sources index.html manifest.json
-}
-
-
 #################################
 function build-es6-polymer {
 rm -rf build/es6/node_modules
@@ -150,6 +143,20 @@ rm -rf build/es6/node_modules/@beruang/brown
 mkdir -p build/es6/src/node_modules/@beruang/brown
 polymer build --name beruang-es6-brown --js-minify \
 --sources ${brownsources}
+}
+
+function build-es6-brown-label {
+rm -rf build/es6/node_modules/@beruang/brown/brown-label
+mkdir -p build/es6/src/node_modules/@beruang/brown/brown-label
+polymer build --name beruang-es6-brown-label --js-minify \
+--sources ${brownlabelsources}
+}
+
+function build-es6-brown-tab {
+rm -rf build/es6/node_modules/@beruang/brown/brown-tab
+mkdir -p build/es6/src/node_modules/@beruang/brown/brown-tab
+polymer build --name beruang-es6-brown-tab --js-minify \
+--sources ${browntabsources}
 }
 
 function build-es6-mvp {
@@ -190,34 +197,6 @@ build-es6-theme
 build-es6-tool
 }
 
-function build-es6-home {
-rm -rf build/es6/src/home
-mkdir -p build/es6/src/home
-polymer build --name beruang-es6-home --js-minify \
---sources src/home/*.js
-}
-
-function build-es6-home2 {
-rm -rf build/es6/src/home2
-mkdir -p build/es6/src/home2
-polymer build --name beruang-es6-home2 --js-minify \
---sources src/home2/*.js
-}
-
-function build-es6-home3 {
-rm -rf build/es6/src/home3
-mkdir -p build/es6/src/home3
-polymer build --name beruang-es6-home3 --js-minify \
---sources src/home3/*.js
-}
-
-function build-es6-app {
-rm -rf build/es6/index.html build/es5/manifest.json
-mkdir -p build/es6
-polymer build --name beruang-es6-app --js-minify \
---sources index.html manifest.json
-}
-
 function build-all {
 build-es5
 build-es6
@@ -229,6 +208,8 @@ case $1 in
 	es5-polymer) build-es5-polymer;;
 	es5-beruang) build-es5-beruang;;
 	es5-brown) build-es5-brown;;
+	es5-brown-label) build-es5-brown-label;;
+	es5-brown-tab) build-es5-brown-tab;;
 	es5-mvp) build-es5-mvp;;
 	es5-polar) build-es5-polar;;
 	es5-theme) build-es5-theme;;
@@ -242,6 +223,8 @@ case $1 in
 	es6-polymer) build-es6-polymer;;
 	es6-beruang) build-es6-beruang;;
 	es6-brown) build-es6-brown;;
+	es6-brown-label) build-es6-brown-label;;
+	es6-brown-tab) build-es6-brown-tab;;
 	es6-mvp) build-es6-mvp;;
 	es6-polar) build-es6-polar;;
 	es6-theme) build-es6-theme;;
