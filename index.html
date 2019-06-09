@@ -19,6 +19,8 @@
 
   <!--script type="module" src="./node_modules/@beruang/brown/brown-label/brown-label.js"></script-->
   <script type="module" src="./node_modules/@beruang/brown/brown-tab/brown-tab-desktop.js"></script>
+  <script type="module" src="./node_modules/@beruang/brown/brown-tab/brown-tabitem-desktop.js"></script>
+  <script type="module" src="./node_modules/@polymer/iron-icons/iron-icons.js"></script>
 	<!-- at least a script tag with type "module" to force polymer build inject window.define in es5-amd compilation -->
 	<script type="module" src="./node_modules/@beruang/tool/beruang-factory.js"></script>
   <script>
@@ -50,9 +52,9 @@
   <body onload="_onload()">
     <!--brown-label>Regular</brown-label-->
     <brown-tab-desktop fit-parent dynamic>
-      <div slot="header">header-1</div>
-      <div slot="header">header-2</div>
-      <div slot="header">header-3</div>
+      <brown-tabitem-desktop id="item1" active><iron-icon icon="add-shopping-cart"></iron-icon>header-1</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item2">header-2</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item3">header-3</brown-tabitem-desktop>
     </brown-tab-desktop>
   </body>
 </html>
