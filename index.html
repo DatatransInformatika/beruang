@@ -17,36 +17,42 @@
 	.div2 {background-color:blue;}
 	</style>
 
-  <!--script type="module" src="./node_modules/@beruang/brown/brown-label.js"></script-->
+  <!--script type="module" src="./node_modules/@beruang/brown/brown-label/brown-label.js"></script-->
+  <script type="module" src="./node_modules/@beruang/brown/brown-tab/brown-tab-desktop.js"></script>
 	<!-- at least a script tag with type "module" to force polymer build inject window.define in es5-amd compilation -->
 	<script type="module" src="./node_modules/@beruang/tool/beruang-factory.js"></script>
   <script>
 		function _onload() {
-			var x = setInterval( function() {
+			/*var x = setInterval( function() {
 				if(window.BeruangFactory) {
 					clearInterval(x);
           window.BeruangFactory.importModule("single-widget-container", function(ms){
             var swc = new ms.default(document.body);
             window.BeruangPlace.setContainer(swc);
             window.BeruangPlace.go("home", {plc:'home'}, function(){
-              //console.log('home done');
+              console.log('home done');
             });
             window.BeruangPlace.go("home2", {plc:'home2'}, function(){
-              //console.log('home2 done');
+              console.log('home2 done');
             });
             window.BeruangPlace.go("home3", {plc:'home3'}, function(){
-              //console.log('home3 done');
+              console.log('home3 done');
             });
             window.BeruangPlace.remove("home3", function(){
-              //console.log('home3 removed');
+              console.log('home3 removed');
             });
           });
 				}
-			}, 100);
+			}, 100);*/
 		}
 	</script>
   </head>
   <body onload="_onload()">
     <!--brown-label>Regular</brown-label-->
+    <brown-tab-desktop fit-parent dynamic>
+      <div slot="header">header-1</div>
+      <div slot="header">header-2</div>
+      <div slot="header">header-3</div>
+    </brown-tab-desktop>
   </body>
 </html>
