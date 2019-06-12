@@ -45,7 +45,8 @@
   </head>
   <body onload="_onload()">
     <!--brown-label>Regular</brown-label-->
-    <brown-tab-desktop fit-parent="" dynamic="">
+    <brown-tab-desktop fit-parent="" dynamic="" on-dynamic-content="dynamicContent">
+    <!--tabItem:BEGIN-->
       <brown-tabitem-desktop id="item1" active="" closable=""><iron-icon icon="add-shopping-cart"></iron-icon>header-1</brown-tabitem-desktop>
       <brown-tabitem-desktop id="item2">header-2</brown-tabitem-desktop>
       <brown-tabitem-desktop id="item3" closable="">header-3</brown-tabitem-desktop>
@@ -60,6 +61,9 @@
       <brown-tabitem-desktop id="item12" closable="">header-12</brown-tabitem-desktop>
       <brown-tabitem-desktop id="item13" closable="">header-13</brown-tabitem-desktop>
       <brown-tabitem-desktop id="item14" closable="">header-14</brown-tabitem-desktop>
+    <!--tabItem:END-->
+    <!--content static:BEGIN-->
+    <!--
       <div slot="content" data-tab="item1">Content 1</div>
       <div slot="content" data-tab="item2">Content 2</div>
       <div slot="content" data-tab="item3">Content 3</div>
@@ -74,7 +78,11 @@
       <div slot="content" data-tab="item12">Content 12</div>
       <div slot="content" data-tab="item13">Content 13</div>
       <div slot="content" data-tab="item14">Content 14</div>
+    -->
+    <!--content static:END-->
     </brown-tab-desktop>
+
+    <script>var tab=document.querySelector("brown-tab-desktop");tab.addEventListener("dynamic-content",function(e){var id=e.detail.id,tab=e.detail.tab,decorator=e.detail.decorator,div=document.createElement("div");div.innerHTML=id;decorator(div);tab.appendChild(div)});</script>
   
 
 </body></html>
