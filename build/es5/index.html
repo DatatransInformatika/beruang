@@ -191,15 +191,17 @@ function(){return this}()||Function("return this")());</script>
       <div slot="content" data-tab="item8">Content 8</div>
       <div slot="content" data-tab="item9">Content 9</div>
       <div slot="content" data-tab="item10">Content 10</div>
-      <div slot="content" data-tab="item11">Content 11</div>
       <div slot="content" data-tab="item12">Content 12</div>
+      <div slot="content" data-tab="item11">Content 11</div>
       <div slot="content" data-tab="item13">Content 13</div>
       <div slot="content" data-tab="item14">Content 14</div>
 -->
     <!--content static:END-->
     </brown-tab-desktop>
 
-    <script>var tab=document.querySelector("brown-tab-desktop");tab.addEventListener("dynamic-content",function(e){var id=e.detail.id,tab=e.detail.tab,decorator=e.detail.decorator,div=document.createElement("div");div.innerHTML=id;decorator(div);tab.appendChild(div)});</script>
+    <script>var tab=document.querySelector("brown-tab-desktop");//v
+tab.addEventListener("dynamic-content",function(e){var id=e.detail.id,tab=e.detail.tab,callback=e.detail.callback,div=document.createElement("div");div.innerHTML=id;callback(div);// brown-tab-desktop.js: el.slot="content"; this.appendChild(el);
+});</script>
 
   
 
