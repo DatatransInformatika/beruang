@@ -90,15 +90,14 @@
     </brown-tab-desktop>
 
     <script>
-      var tab = document.querySelector("brown-tab-desktop");
+      var tab = document.querySelector("brown-tab-desktop");//v
       tab.addEventListener("dynamic-content", function(e){
         var id = e.detail.id;
         var tab = e.detail.tab;
-        var decorator = e.detail.decorator;
+        var callback = e.detail.callback;
         var div = document.createElement("div");
         div.innerHTML = id;
-        decorator(div);
-        tab.appendChild(div);
+        callback(div);// brown-tab-desktop.js: el.slot="content"; this.appendChild(el);
       });
     </script>
 
