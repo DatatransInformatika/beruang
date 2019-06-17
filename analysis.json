@@ -1,0 +1,1558 @@
+{
+  "schema_version": "1.0.0",
+  "elements": [
+    {
+      "description": "",
+      "summary": "",
+      "path": "node_modules/%40beruang/brown/brown-tab/brown-tab-desktop.js",
+      "properties": [
+        {
+          "name": "dynamic",
+          "type": "boolean | null | undefined",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 92,
+              "column": 6
+            },
+            "end": {
+              "line": 96,
+              "column": 7
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "Boolean"
+            }
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "content",
+          "type": "string | null | undefined",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 98,
+              "column": 6
+            },
+            "end": {
+              "line": 102,
+              "column": 7
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "String"
+            }
+          },
+          "defaultValue": "\"static\""
+        }
+      ],
+      "methods": [
+        {
+          "name": "ready",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 106,
+              "column": 2
+            },
+            "end": {
+              "line": 206,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "connectedCallback",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 208,
+              "column": 2
+            },
+            "end": {
+              "line": 212,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "disconnectedCallback",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 214,
+              "column": 2
+            },
+            "end": {
+              "line": 217,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_getTabItemSibling",
+          "description": "//////////////////////fungsi untuk menggeser tab lain (next / previous), jika suatu tab ditutup:START/////////////",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 220,
+              "column": 2
+            },
+            "end": {
+              "line": 232,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "el"
+            },
+            {
+              "name": "callback"
+            }
+          ]
+        },
+        {
+          "name": "_removeDynamicContent",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 236,
+              "column": 2
+            },
+            "end": {
+              "line": 244,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_requestDynamicContent",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 246,
+              "column": 2
+            },
+            "end": {
+              "line": 261,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "id"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_getContentByDataTab",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 263,
+              "column": 2
+            },
+            "end": {
+              "line": 269,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "tabId"
+            }
+          ]
+        },
+        {
+          "name": "_getLightDOM",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 271,
+              "column": 2
+            },
+            "end": {
+              "line": 280,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "startEl"
+            },
+            {
+              "name": "forward"
+            },
+            {
+              "name": "callback"
+            }
+          ]
+        },
+        {
+          "name": "_ensureItemVisible",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 282,
+              "column": 2
+            },
+            "end": {
+              "line": 296,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "tabItem"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_evaluateScroll",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 298,
+              "column": 2
+            },
+            "end": {
+              "line": 303,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_evaluateScrollDo",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 305,
+              "column": 2
+            },
+            "end": {
+              "line": 332,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "scrollerId"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_preScroll",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 334,
+              "column": 2
+            },
+            "end": {
+              "line": 347,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "e"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_postScroll",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 349,
+              "column": 2
+            },
+            "end": {
+              "line": 363,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "e"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 364,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "name": "BrownTabDesktop",
+      "attributes": [
+        {
+          "name": "dynamic",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 92,
+              "column": 6
+            },
+            "end": {
+              "line": 96,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "type": "boolean | null | undefined"
+        },
+        {
+          "name": "content",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 98,
+              "column": 6
+            },
+            "end": {
+              "line": 102,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "type": "string | null | undefined"
+        }
+      ],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "brown-tab-desktop"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "node_modules/%40beruang/brown/brown-tab/brown-tabitem-desktop.js",
+      "properties": [
+        {
+          "name": "slot",
+          "type": "string | null | undefined",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 53,
+              "column": 6
+            },
+            "end": {
+              "line": 58,
+              "column": 7
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "readOnly": true,
+              "attributeType": "String"
+            }
+          },
+          "defaultValue": "\"header\""
+        },
+        {
+          "name": "active",
+          "type": "boolean | null | undefined",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 60,
+              "column": 6
+            },
+            "end": {
+              "line": 65,
+              "column": 7
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "observer": "\"_activeChanged\"",
+              "attributeType": "Boolean"
+            }
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "closable",
+          "type": "boolean | null | undefined",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 67,
+              "column": 6
+            },
+            "end": {
+              "line": 70,
+              "column": 7
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "Boolean"
+            }
+          },
+          "defaultValue": "false"
+        }
+      ],
+      "methods": [
+        {
+          "name": "_activeChanged",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 74,
+              "column": 2
+            },
+            "end": {
+              "line": 92,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "newValue"
+            },
+            {
+              "name": "oldValue"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_closeIconMouseEnter",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 94,
+              "column": 2
+            },
+            "end": {
+              "line": 97,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "e"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_closeIconMouseLeave",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 99,
+              "column": 2
+            },
+            "end": {
+              "line": 102,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "e"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 103,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "name": "BrownTabItemDesktop",
+      "attributes": [
+        {
+          "name": "slot",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 53,
+              "column": 6
+            },
+            "end": {
+              "line": 58,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "type": "string | null | undefined"
+        },
+        {
+          "name": "active",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 60,
+              "column": 6
+            },
+            "end": {
+              "line": 65,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "type": "boolean | null | undefined"
+        },
+        {
+          "name": "closable",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 67,
+              "column": 6
+            },
+            "end": {
+              "line": 70,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "type": "boolean | null | undefined"
+        }
+      ],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "brown-tabitem-desktop"
+    }
+  ],
+  "classes": [
+    {
+      "description": "",
+      "summary": "",
+      "path": "node_modules/%40beruang/mvp/abstract-presenter.js",
+      "properties": [],
+      "methods": [
+        {
+          "name": "start",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 5,
+              "column": 2
+            },
+            "end": {
+              "line": 7,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "singleWidgetContainer"
+            },
+            {
+              "name": "initial"
+            },
+            {
+              "name": "data"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "isSingleTon",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 9,
+              "column": 2
+            },
+            "end": {
+              "line": 11,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "isHistory",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 13,
+              "column": 2
+            },
+            "end": {
+              "line": 15,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "mayLeave",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 17,
+              "column": 2
+            },
+            "end": {
+              "line": 19,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "callback"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "close",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 21,
+              "column": 2
+            },
+            "end": {
+              "line": 21,
+              "column": 12
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 0,
+          "column": 7
+        },
+        "end": {
+          "line": 22,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "name": "AbstractPresenter"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "src/home/home-presenter.js",
+      "properties": [],
+      "methods": [
+        {
+          "name": "start",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 7,
+              "column": 4
+            },
+            "end": {
+              "line": 10,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "singleWidgetContainer"
+            },
+            {
+              "name": "initial"
+            },
+            {
+              "name": "data"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "isSingleTon",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
+            "start": {
+              "line": 9,
+              "column": 2
+            },
+            "end": {
+              "line": 11,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "inheritedFrom": "AbstractPresenter"
+        },
+        {
+          "name": "isHistory",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
+            "start": {
+              "line": 13,
+              "column": 2
+            },
+            "end": {
+              "line": 15,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "inheritedFrom": "AbstractPresenter"
+        },
+        {
+          "name": "mayLeave",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
+            "start": {
+              "line": 17,
+              "column": 2
+            },
+            "end": {
+              "line": 19,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "callback"
+            }
+          ],
+          "return": {
+            "type": "void"
+          },
+          "inheritedFrom": "AbstractPresenter"
+        },
+        {
+          "name": "close",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
+            "start": {
+              "line": 21,
+              "column": 2
+            },
+            "end": {
+              "line": 21,
+              "column": 12
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          },
+          "inheritedFrom": "AbstractPresenter"
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 2,
+          "column": 15
+        },
+        "end": {
+          "line": 11,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "AbstractPresenter",
+      "name": "HomePresenter"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "node_modules/%40beruang/mvp/abstract-view.js",
+      "properties": [],
+      "methods": [
+        {
+          "name": "asyncWidget",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 4,
+              "column": 2
+            },
+            "end": {
+              "line": 6,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "fReady"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 0,
+          "column": 7
+        },
+        "end": {
+          "line": 7,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "name": "AbstractView"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "src/home/home-view-phone.js",
+      "properties": [],
+      "methods": [
+        {
+          "name": "asyncWidget",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 7,
+              "column": 2
+            },
+            "end": {
+              "line": 30,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "fReady"
+            }
+          ]
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 2,
+          "column": 15
+        },
+        "end": {
+          "line": 31,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "AbstractView",
+      "name": "HomeView"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "src/home/home-view-desktop.js",
+      "properties": [],
+      "methods": [
+        {
+          "name": "asyncWidget",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 7,
+              "column": 2
+            },
+            "end": {
+              "line": 30,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "fReady"
+            }
+          ]
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 2,
+          "column": 15
+        },
+        "end": {
+          "line": 31,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "AbstractView",
+      "name": "HomeView"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "src/home2/home2-view-desktop.js",
+      "properties": [],
+      "methods": [
+        {
+          "name": "asyncWidget",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 7,
+              "column": 2
+            },
+            "end": {
+              "line": 30,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "fReady"
+            }
+          ]
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 2,
+          "column": 15
+        },
+        "end": {
+          "line": 31,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "AbstractView",
+      "name": "Home2View"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "src/home2/home2-presenter.js",
+      "properties": [],
+      "methods": [
+        {
+          "name": "start",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 7,
+              "column": 4
+            },
+            "end": {
+              "line": 10,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "singleWidgetContainer"
+            },
+            {
+              "name": "initial"
+            },
+            {
+              "name": "data"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "isSingleTon",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
+            "start": {
+              "line": 9,
+              "column": 2
+            },
+            "end": {
+              "line": 11,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "inheritedFrom": "AbstractPresenter"
+        },
+        {
+          "name": "isHistory",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
+            "start": {
+              "line": 13,
+              "column": 2
+            },
+            "end": {
+              "line": 15,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "inheritedFrom": "AbstractPresenter"
+        },
+        {
+          "name": "mayLeave",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
+            "start": {
+              "line": 17,
+              "column": 2
+            },
+            "end": {
+              "line": 19,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "callback"
+            }
+          ],
+          "return": {
+            "type": "void"
+          },
+          "inheritedFrom": "AbstractPresenter"
+        },
+        {
+          "name": "close",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
+            "start": {
+              "line": 21,
+              "column": 2
+            },
+            "end": {
+              "line": 21,
+              "column": 12
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          },
+          "inheritedFrom": "AbstractPresenter"
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 2,
+          "column": 15
+        },
+        "end": {
+          "line": 11,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "AbstractPresenter",
+      "name": "Home2Presenter"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "src/home2/home2-view-phone.js",
+      "properties": [],
+      "methods": [
+        {
+          "name": "asyncWidget",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 7,
+              "column": 2
+            },
+            "end": {
+              "line": 30,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "fReady"
+            }
+          ]
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 2,
+          "column": 15
+        },
+        "end": {
+          "line": 31,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "AbstractView",
+      "name": "Home2View"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "src/home3/home3-presenter.js",
+      "properties": [],
+      "methods": [
+        {
+          "name": "start",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 7,
+              "column": 4
+            },
+            "end": {
+              "line": 10,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "singleWidgetContainer"
+            },
+            {
+              "name": "initial"
+            },
+            {
+              "name": "data"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "isSingleTon",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
+            "start": {
+              "line": 9,
+              "column": 2
+            },
+            "end": {
+              "line": 11,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "inheritedFrom": "AbstractPresenter"
+        },
+        {
+          "name": "isHistory",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
+            "start": {
+              "line": 13,
+              "column": 2
+            },
+            "end": {
+              "line": 15,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "inheritedFrom": "AbstractPresenter"
+        },
+        {
+          "name": "mayLeave",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 12,
+              "column": 4
+            },
+            "end": {
+              "line": 14,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "close",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
+            "start": {
+              "line": 21,
+              "column": 2
+            },
+            "end": {
+              "line": 21,
+              "column": 12
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          },
+          "inheritedFrom": "AbstractPresenter"
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 2,
+          "column": 15
+        },
+        "end": {
+          "line": 15,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "AbstractPresenter",
+      "name": "Home3Presenter"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "src/home3/home3-view-phone.js",
+      "properties": [],
+      "methods": [
+        {
+          "name": "asyncWidget",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 7,
+              "column": 2
+            },
+            "end": {
+              "line": 30,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "fReady"
+            }
+          ]
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 2,
+          "column": 15
+        },
+        "end": {
+          "line": 31,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "AbstractView",
+      "name": "Home3View"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "src/home3/home3-view-desktop.js",
+      "properties": [],
+      "methods": [
+        {
+          "name": "asyncWidget",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 7,
+              "column": 2
+            },
+            "end": {
+              "line": 30,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "fReady"
+            }
+          ]
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 2,
+          "column": 15
+        },
+        "end": {
+          "line": 31,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "AbstractView",
+      "name": "Home3View"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "node_modules/%40beruang/beruang-behavior.js",
+      "properties": [],
+      "methods": [
+        {
+          "name": "ready",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 14,
+              "column": 1
+            },
+            "end": {
+              "line": 17,
+              "column": 2
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 18,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "base"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "node_modules/%40beruang/brown/brown-behavior.js",
+      "properties": [],
+      "methods": [],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 3,
+          "column": 0
+        },
+        "end": {
+          "line": 61,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "base"
+    }
+  ]
+}
