@@ -18,6 +18,7 @@
   <!--script type="module" src="./node_modules/@beruang/brown/brown-label/brown-label.js"></script-->
   <script type="module" src="./node_modules/@beruang/brown/brown-tab/brown-tab-desktop.js"></script>
   <script type="module" src="./node_modules/@beruang/brown/brown-tab/brown-tab-dynamic-desktop.js"></script>
+  <script type="module" src="./node_modules/@beruang/brown/brown-tab/brown-tab-manual-desktop.js"></script>
   <script type="module" src="./node_modules/@beruang/brown/brown-tab/brown-tabitem-desktop.js"></script>
   <script type="module" src="./node_modules/@polymer/iron-icons/iron-icons.js"></script>
 	<!-- at least a script tag with type "module" to force polymer build inject window.define in es5-amd compilation -->
@@ -72,13 +73,30 @@
       <div slot="content" data-tab="item9">Content 9</div>
       <div slot="content" data-tab="item10">Content 10</div>
       <div slot="content" data-tab="item11">Content 11</div>
-      <div slot="content" data-tab="item12">Content 12</div>      
+      <div slot="content" data-tab="item12">Content 12</div>
       <div slot="content" data-tab="item13">Content 13</div>
       <div slot="content" data-tab="item14">Content 14</div>
   </brown-tab-desktop-->
 
-    <brown-tab-dynamic-desktop fit-parent="" dynamic-tab="">
-      <brown-tabitem-desktop id="item1" active="" closable=""><iron-icon icon="add-shopping-cart"></iron-icon>header-1</brown-tabitem-desktop>
+    <!--brown-tab-dynamic-desktop fit-parent dynamic-tab>
+      <brown-tabitem-desktop id="item1" active closable><iron-icon icon="add-shopping-cart"></iron-icon>header-1</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item2">header-2</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item3" closable>header-3</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item4" closable>header-4</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item5" closable>header-5</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item6" closable>header-6</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item7" closable>header-7</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item8" closable>header-8</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item9" closable>header-9</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item10" closable>header-10</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item11" closable>header-11</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item12" closable>header-12</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item13" closable>header-13</brown-tabitem-desktop>
+      <brown-tabitem-desktop id="item14" closable>header-14</brown-tabitem-desktop>
+    </brown-tab-dynamic-desktop-->
+
+    <brown-tab-manual-desktop fit-parent="" dynamic-tab="">
+      <brown-tabitem-desktop id="item1" closable=""><iron-icon icon="add-shopping-cart"></iron-icon>header-1</brown-tabitem-desktop>
       <brown-tabitem-desktop id="item2">header-2</brown-tabitem-desktop>
       <brown-tabitem-desktop id="item3" closable="">header-3</brown-tabitem-desktop>
       <brown-tabitem-desktop id="item4" closable="">header-4</brown-tabitem-desktop>
@@ -92,11 +110,26 @@
       <brown-tabitem-desktop id="item12" closable="">header-12</brown-tabitem-desktop>
       <brown-tabitem-desktop id="item13" closable="">header-13</brown-tabitem-desktop>
       <brown-tabitem-desktop id="item14" closable="">header-14</brown-tabitem-desktop>
-    </brown-tab-dynamic-desktop>
+      <div slot="content" data-active-tab="item2">Content 1</div>
+    </brown-tab-manual-desktop>
 
     <script>var tab=document.querySelector("brown-tab-dynamic-desktop");//v
 if(tab){tab.addEventListener("dynamic-content",function(e){var id=e.detail.id,tab=e.detail.tab,callback=e.detail.callback,div=document.createElement("div");div.innerHTML=id;callback(div);// brown-tab-desktop.js: el.slot="content"; this.appendChild(el);
-})}</script>
+})}var manualTab=document.querySelector("brown-tab-manual-desktop");if(manualTab){manualTab.addEventListener("manual-tabitem-activing",function(e){var oldContent=e.detail.oldContent;if(oldContent){manualTab.removeChild(oldContent)}var id=e.detail.id,newContent=document.createElement("div");newContent.setAttribute("slot","content");newContent.setAttribute("data-active-tab",id);newContent.innerHTML=id;manualTab.appendChild(newContent)});manualTab.addEventListener("manual-tabitem-closing",function(e){var tabItem=e.detail.tabItem,active=tabItem.active;manualTab.removeChild(tabItem);var oldContent=e.detail.oldContent;if(oldContent){manualTab.removeChild(oldContent)}/*if(active) {
+                    var oldContent = e.detail.oldContent;
+                    if(oldContent) {
+                        manualTab.removeChild(oldContent);
+                        let nextTabItem = e.detail.nextSibling || e.detail.prevSibling;
+                        if(nextTabItem) {
+                            var newContent = document.createElement("div");
+                            newContent.setAttribute("slot", "content");
+                            newContent.setAttribute("data-active-tab", nextTabItem.id);
+                            newContent.innerHTML = nextTabItem.id;
+                            manualTab.appendChild(newContent);
+                            return;
+                        }
+                    }
+                }*/})}</script>
 
   
 
