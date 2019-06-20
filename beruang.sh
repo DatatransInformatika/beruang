@@ -25,6 +25,10 @@ browntabsources=`cat <<EOF
 node_modules/@beruang/brown/brown-tab/*.js
 EOF`
 
+brownmasksources=`cat <<EOF
+node_modules/@beruang/brown/brown-mask/*.js
+EOF`
+
 mvpsources=`cat <<EOF
 node_modules/@beruang/mvp/*.js
 EOF`
@@ -150,6 +154,25 @@ polymer build --name beruang-es6-brown-tab --js-minify \
 function build-brown-tab {
 build-es5-brown-tab
 build-es6-brown-tab
+}
+
+function build-es5-brown-mask {
+rm -rf build/es5/node_modules/@beruang/brown/brown-mask
+mkdir -p build/es5/src/node_modules/@beruang/brown/brown-mask
+polymer build --name beruang-es5-brown-mask --js-compile --js-transform-modules-to-amd --js-minify \
+--sources ${brownmasksources}
+}
+
+function build-es6-brown-mask {
+rm -rf build/es6/node_modules/@beruang/brown/brown-mask
+mkdir -p build/es6/src/node_modules/@beruang/brown/brown-mask
+polymer build --name beruang-es6-brown-mask --js-minify \
+--sources ${brownmasksources}
+}
+
+function build-brown-mask {
+build-es5-brown-mask
+build-es6-brown-mask
 }
 
 function build-es5-mvp {
@@ -284,6 +307,7 @@ case $1 in
 	brown) build-brown;;
 	brown-label) build-brown-label;;
 	brown-tab) build-brown-tab;;
+	brown-mask) build-brown-mask;;
 	mvp) build-mvp;;
 	polar) build-polar;;
 	polar-col) build-polar-col;;

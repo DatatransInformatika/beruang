@@ -13,11 +13,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 35,
+              "line": 43,
               "column": 2
             },
             "end": {
-              "line": 52,
+              "line": 60,
               "column": 3
             }
           },
@@ -37,11 +37,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 54,
+              "line": 62,
               "column": 2
             },
             "end": {
-              "line": 71,
+              "line": 79,
               "column": 3
             }
           },
@@ -61,11 +61,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 73,
+              "line": 81,
               "column": 2
             },
             "end": {
-              "line": 85,
+              "line": 93,
               "column": 3
             }
           },
@@ -88,11 +88,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 87,
+              "line": 95,
               "column": 2
             },
             "end": {
-              "line": 93,
+              "line": 101,
               "column": 3
             }
           },
@@ -109,11 +109,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 14,
+          "line": 22,
           "column": 0
         },
         "end": {
-          "line": 94,
+          "line": 102,
           "column": 1
         }
       },
@@ -141,11 +141,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 27,
+              "line": 35,
               "column": 2
             },
             "end": {
-              "line": 38,
+              "line": 46,
               "column": 3
             }
           },
@@ -165,11 +165,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 40,
+              "line": 48,
               "column": 2
             },
             "end": {
-              "line": 57,
+              "line": 65,
               "column": 3
             }
           },
@@ -189,11 +189,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 59,
+              "line": 67,
               "column": 2
             },
             "end": {
-              "line": 65,
+              "line": 73,
               "column": 3
             }
           },
@@ -216,11 +216,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 67,
+              "line": 75,
               "column": 2
             },
             "end": {
-              "line": 75,
+              "line": 83,
               "column": 3
             }
           },
@@ -236,11 +236,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 77,
+              "line": 85,
               "column": 2
             },
             "end": {
-              "line": 92,
+              "line": 100,
               "column": 3
             }
           },
@@ -260,11 +260,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 14,
+          "line": 22,
           "column": 0
         },
         "end": {
-          "line": 93,
+          "line": 101,
           "column": 1
         }
       },
@@ -281,6 +281,230 @@
       "tagname": "brown-tab-dynamic-desktop"
     },
     {
+      "description": "`brown-tab-dynamic-desktop` is dynamic tab panel element.",
+      "summary": "",
+      "path": "node_modules/%40beruang/brown/brown-tab/brown-tab-manual-desktop.js",
+      "properties": [],
+      "methods": [
+        {
+          "name": "ready",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 36,
+              "column": 2
+            },
+            "end": {
+              "line": 57,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_onTabClosing",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 59,
+              "column": 2
+            },
+            "end": {
+              "line": 74,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "tabItem"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_onTabActiving",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 76,
+              "column": 2
+            },
+            "end": {
+              "line": 90,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "tabItem"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_onTabActiveChanged",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 92,
+              "column": 2
+            },
+            "end": {
+              "line": 92,
+              "column": 41
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "tabItem"
+            },
+            {
+              "name": "active"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_getActiveTabItem",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 94,
+              "column": 2
+            },
+            "end": {
+              "line": 100,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "_getTabItemById",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 102,
+              "column": 2
+            },
+            "end": {
+              "line": 108,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "tabId"
+            }
+          ]
+        },
+        {
+          "name": "_getTabItemNextSibling",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 110,
+              "column": 2
+            },
+            "end": {
+              "line": 115,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "tabItem"
+            }
+          ]
+        },
+        {
+          "name": "_getTabItemPrevSibling",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 117,
+              "column": 2
+            },
+            "end": {
+              "line": 122,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "tabItem"
+            }
+          ]
+        },
+        {
+          "name": "_getContent",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 124,
+              "column": 2
+            },
+            "end": {
+              "line": 129,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": []
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 130,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "name": "BrownTabManualDesktop",
+      "attributes": [],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "brown-tab-manual-desktop"
+    },
+    {
       "description": "`brown-tab-item-desktop` is tab item element.",
       "summary": "",
       "path": "node_modules/%40beruang/brown/brown-tab/brown-tabitem-desktop.js",
@@ -292,11 +516,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 58,
+              "line": 66,
               "column": 10
             },
             "end": {
-              "line": 63,
+              "line": 71,
               "column": 11
             }
           },
@@ -315,11 +539,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 65,
+              "line": 73,
               "column": 10
             },
             "end": {
-              "line": 68,
+              "line": 76,
               "column": 11
             }
           },
@@ -338,11 +562,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 77,
+              "line": 85,
               "column": 2
             },
             "end": {
-              "line": 95,
+              "line": 103,
               "column": 3
             }
           },
@@ -365,11 +589,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 97,
+              "line": 105,
               "column": 2
             },
             "end": {
-              "line": 100,
+              "line": 108,
               "column": 3
             }
           },
@@ -389,11 +613,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 102,
+              "line": 110,
               "column": 2
             },
             "end": {
-              "line": 105,
+              "line": 113,
               "column": 3
             }
           },
@@ -413,11 +637,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 13,
+          "line": 21,
           "column": 0
         },
         "end": {
-          "line": 106,
+          "line": 114,
           "column": 1
         }
       },
@@ -430,11 +654,11 @@
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 58,
+              "line": 66,
               "column": 10
             },
             "end": {
-              "line": 63,
+              "line": 71,
               "column": 11
             }
           },
@@ -446,11 +670,11 @@
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 65,
+              "line": 73,
               "column": 10
             },
             "end": {
-              "line": 68,
+              "line": 76,
               "column": 11
             }
           },
@@ -482,11 +706,11 @@
               "privacy": "public",
               "sourceRange": {
                 "start": {
-                  "line": 13,
+                  "line": 21,
                   "column": 3
                 },
                 "end": {
-                  "line": 17,
+                  "line": 25,
                   "column": 4
                 }
               },
@@ -503,11 +727,11 @@
           "metadata": {},
           "sourceRange": {
             "start": {
-              "line": 9,
+              "line": 17,
               "column": 4
             },
             "end": {
-              "line": 201,
+              "line": 209,
               "column": 1
             }
           },
@@ -846,7 +1070,7 @@
     {
       "description": "",
       "summary": "",
-      "path": "src/home/home-view-desktop.js",
+      "path": "src/home/home-view-phone.js",
       "properties": [],
       "methods": [
         {
@@ -891,7 +1115,7 @@
     {
       "description": "",
       "summary": "",
-      "path": "src/home/home-view-phone.js",
+      "path": "src/home/home-view-desktop.js",
       "properties": [],
       "methods": [
         {
@@ -1396,11 +1620,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 14,
+              "line": 22,
               "column": 1
             },
             "end": {
-              "line": 17,
+              "line": 25,
               "column": 2
             }
           },
@@ -1416,11 +1640,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 0
         },
         "end": {
-          "line": 18,
+          "line": 26,
           "column": 1
         }
       },
@@ -1438,11 +1662,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 3,
+          "line": 11,
           "column": 0
         },
         "end": {
-          "line": 3,
+          "line": 11,
           "column": 21
         }
       },
@@ -1461,11 +1685,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 13,
+              "line": 21,
               "column": 3
             },
             "end": {
-              "line": 17,
+              "line": 25,
               "column": 4
             }
           },
@@ -1480,11 +1704,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 21,
+              "line": 29,
               "column": 1
             },
             "end": {
-              "line": 57,
+              "line": 65,
               "column": 2
             }
           },
@@ -1500,11 +1724,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 59,
+              "line": 67,
               "column": 1
             },
             "end": {
-              "line": 63,
+              "line": 71,
               "column": 2
             }
           },
@@ -1520,11 +1744,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 65,
+              "line": 73,
               "column": 1
             },
             "end": {
-              "line": 68,
+              "line": 76,
               "column": 2
             }
           },
@@ -1540,11 +1764,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 70,
+              "line": 78,
               "column": 1
             },
             "end": {
-              "line": 77,
+              "line": 85,
               "column": 2
             }
           },
@@ -1561,11 +1785,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 80,
+              "line": 88,
               "column": 1
             },
             "end": {
-              "line": 91,
+              "line": 99,
               "column": 2
             }
           },
@@ -1585,11 +1809,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 94,
+              "line": 102,
               "column": 1
             },
             "end": {
-              "line": 103,
+              "line": 111,
               "column": 2
             }
           },
@@ -1612,11 +1836,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 106,
+              "line": 114,
               "column": 1
             },
             "end": {
-              "line": 120,
+              "line": 128,
               "column": 2
             }
           },
@@ -1636,11 +1860,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 122,
+              "line": 130,
               "column": 1
             },
             "end": {
-              "line": 127,
+              "line": 135,
               "column": 2
             }
           },
@@ -1656,11 +1880,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 129,
+              "line": 137,
               "column": 1
             },
             "end": {
-              "line": 156,
+              "line": 164,
               "column": 2
             }
           },
@@ -1680,11 +1904,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 158,
+              "line": 166,
               "column": 1
             },
             "end": {
-              "line": 171,
+              "line": 179,
               "column": 2
             }
           },
@@ -1704,11 +1928,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 173,
+              "line": 181,
               "column": 1
             },
             "end": {
-              "line": 187,
+              "line": 195,
               "column": 2
             }
           },
@@ -1728,11 +1952,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 190,
+              "line": 198,
               "column": 1
             },
             "end": {
-              "line": 192,
+              "line": 200,
               "column": 2
             }
           },
@@ -1752,11 +1976,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 194,
+              "line": 202,
               "column": 1
             },
             "end": {
-              "line": 196,
+              "line": 204,
               "column": 2
             }
           },
@@ -1776,11 +2000,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 198,
+              "line": 206,
               "column": 1
             },
             "end": {
-              "line": 200,
+              "line": 208,
               "column": 2
             }
           },
@@ -1803,11 +2027,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 10,
+          "line": 18,
           "column": 0
         },
         "end": {
-          "line": 201,
+          "line": 209,
           "column": 1
         }
       },

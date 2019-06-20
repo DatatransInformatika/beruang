@@ -128,6 +128,14 @@ function(){return this}()||Function("return this")());</script>
 	<style>
 	.div1 {background-color:red;}
 	.div2 {background-color:blue;}
+    body {
+        position:absolute;
+        top:0px;
+        right:0px;
+        bottom:0px;
+        left:0px;
+        margin:0px;
+    }
 	</style>
 
   <!--script type="module" src="./node_modules/@beruang/brown/brown-label/brown-label.js"></script-->
@@ -136,6 +144,7 @@ function(){return this}()||Function("return this")());</script>
   <script>define(['./node_modules/@beruang/brown/brown-tab/brown-tab-dynamic-desktop.js']);</script>
   <script>define(['./node_modules/@beruang/brown/brown-tab/brown-tab-manual-desktop.js']);</script>
   <script>define(['./node_modules/@beruang/brown/brown-tab/brown-tabitem-desktop.js']);</script>
+  <script>define(['./node_modules/@beruang/brown/brown-mask/brown-mask.js']);</script>
   <script>define(['./node_modules/@polymer/iron-icons/iron-icons.js']);</script>
 	<!-- at least a script tag with type "module" to force polymer build inject window.define in es5-amd compilation -->
 	<script>define(['./node_modules/@beruang/tool/beruang-factory.js']);</script>
@@ -227,7 +236,8 @@ function(){return this}()||Function("return this")());</script>
       <brown-tabitem-desktop id="item13" closable="">header-13</brown-tabitem-desktop>
       <brown-tabitem-desktop id="item14" closable="">header-14</brown-tabitem-desktop>
       <div slot="content" data-active-tab="item2">Content 1</div>
-    </brown-tab-manual-desktop>
+  </brown-tab-manual-desktop>
+    <!--brown-mask message="wait..."></brown-mask-->
 
     <script>var tab=document.querySelector("brown-tab-dynamic-desktop");//v
 if(tab){tab.addEventListener("dynamic-content",function(e){var id=e.detail.id,tab=e.detail.tab,callback=e.detail.callback,div=document.createElement("div");div.innerHTML=id;callback(div);// brown-tab-desktop.js: el.slot="content"; this.appendChild(el);
