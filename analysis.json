@@ -2,6 +2,118 @@
   "schema_version": "1.0.0",
   "elements": [
     {
+      "description": "",
+      "summary": "",
+      "path": "node_modules/%40beruang/brown/brown-mask/brown-mask.js",
+      "properties": [
+        {
+          "name": "message",
+          "type": "string | null | undefined",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 45,
+              "column": 10
+            },
+            "end": {
+              "line": 47,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "attributeType": "String"
+            }
+          }
+        }
+      ],
+      "methods": [
+        {
+          "name": "ready",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 51,
+              "column": 4
+            },
+            "end": {
+              "line": 55,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_string",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 57,
+              "column": 4
+            },
+            "end": {
+              "line": 59,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "s"
+            }
+          ]
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 16,
+          "column": 0
+        },
+        "end": {
+          "line": 61,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "name": "BrownMask",
+      "attributes": [
+        {
+          "name": "message",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 45,
+              "column": 10
+            },
+            "end": {
+              "line": 47,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string | null | undefined"
+        }
+      ],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "brown-mask"
+    },
+    {
       "description": "`brown-tab-desktop` is static tab panel element.",
       "summary": "",
       "path": "node_modules/%40beruang/brown/brown-tab/brown-tab-desktop.js",
@@ -13,11 +125,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 43,
+              "line": 53,
               "column": 2
             },
             "end": {
-              "line": 60,
+              "line": 70,
               "column": 3
             }
           },
@@ -37,11 +149,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 62,
+              "line": 72,
               "column": 2
             },
             "end": {
-              "line": 79,
+              "line": 87,
               "column": 3
             }
           },
@@ -61,11 +173,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 81,
+              "line": 89,
               "column": 2
             },
             "end": {
-              "line": 93,
+              "line": 101,
               "column": 3
             }
           },
@@ -88,11 +200,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 95,
+              "line": 103,
               "column": 2
             },
             "end": {
-              "line": 101,
+              "line": 109,
               "column": 3
             }
           },
@@ -109,11 +221,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 22,
+          "line": 23,
           "column": 0
         },
         "end": {
-          "line": 102,
+          "line": 110,
           "column": 1
         }
       },
@@ -141,11 +253,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 35,
+              "line": 45,
               "column": 2
             },
             "end": {
-              "line": 46,
+              "line": 56,
               "column": 3
             }
           },
@@ -165,11 +277,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 48,
+              "line": 58,
               "column": 2
             },
             "end": {
-              "line": 65,
+              "line": 73,
               "column": 3
             }
           },
@@ -189,11 +301,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 67,
+              "line": 75,
               "column": 2
             },
             "end": {
-              "line": 73,
+              "line": 81,
               "column": 3
             }
           },
@@ -216,11 +328,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 75,
+              "line": 83,
               "column": 2
             },
             "end": {
-              "line": 83,
+              "line": 91,
               "column": 3
             }
           },
@@ -236,11 +348,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 85,
+              "line": 93,
               "column": 2
             },
             "end": {
-              "line": 100,
+              "line": 108,
               "column": 3
             }
           },
@@ -260,11 +372,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 22,
+          "line": 23,
           "column": 0
         },
         "end": {
-          "line": 101,
+          "line": 109,
           "column": 1
         }
       },
@@ -292,11 +404,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 36,
+              "line": 46,
               "column": 2
             },
             "end": {
-              "line": 57,
+              "line": 67,
               "column": 3
             }
           },
@@ -312,11 +424,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 59,
+              "line": 69,
               "column": 2
             },
             "end": {
-              "line": 74,
+              "line": 84,
               "column": 3
             }
           },
@@ -336,11 +448,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 76,
+              "line": 86,
               "column": 2
             },
             "end": {
-              "line": 90,
+              "line": 99,
               "column": 3
             }
           },
@@ -360,11 +472,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 92,
+              "line": 101,
               "column": 2
             },
             "end": {
-              "line": 92,
+              "line": 101,
               "column": 41
             }
           },
@@ -387,11 +499,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 94,
+              "line": 103,
               "column": 2
             },
             "end": {
-              "line": 100,
+              "line": 109,
               "column": 3
             }
           },
@@ -404,11 +516,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 102,
+              "line": 111,
               "column": 2
             },
             "end": {
-              "line": 108,
+              "line": 117,
               "column": 3
             }
           },
@@ -425,11 +537,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 110,
+              "line": 119,
               "column": 2
             },
             "end": {
-              "line": 115,
+              "line": 124,
               "column": 3
             }
           },
@@ -446,11 +558,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 117,
+              "line": 126,
               "column": 2
             },
             "end": {
-              "line": 122,
+              "line": 131,
               "column": 3
             }
           },
@@ -467,11 +579,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 124,
+              "line": 133,
               "column": 2
             },
             "end": {
-              "line": 129,
+              "line": 138,
               "column": 3
             }
           },
@@ -484,11 +596,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 23,
+          "line": 24,
           "column": 0
         },
         "end": {
-          "line": 130,
+          "line": 139,
           "column": 1
         }
       },
@@ -556,6 +668,26 @@
         }
       ],
       "methods": [
+        {
+          "name": "ready",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 80,
+              "column": 2
+            },
+            "end": {
+              "line": 83,
+              "column": 3
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        },
         {
           "name": "_activeChanged",
           "description": "",
@@ -689,20 +821,82 @@
       },
       "slots": [],
       "tagname": "brown-tabitem-desktop"
+    },
+    {
+      "description": "`polar-col` is vertical layout manager.",
+      "summary": "",
+      "path": "node_modules/%40beruang/polar/polar-col/polar-col.js",
+      "properties": [],
+      "methods": [],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 34,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "name": "PolarCol",
+      "attributes": [],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "polar-col"
+    },
+    {
+      "description": "`polar-row` is horizontal layout manager.",
+      "summary": "",
+      "path": "node_modules/%40beruang/polar/polar-row/polar-row.js",
+      "properties": [],
+      "methods": [],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 19,
+          "column": 0
+        },
+        "end": {
+          "line": 34,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "name": "PolarRow",
+      "attributes": [],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "polar-row"
     }
   ],
   "metadata": {
     "polymer": {
       "behaviors": [
         {
-          "description": "`BrownTabBehavior`",
+          "description": "`BeruangBehavior`",
           "summary": "",
-          "path": "node_modules/%40beruang/brown/brown-tab/brown-tab-behavior.js",
+          "path": "node_modules/%40beruang/beruang-behavior.js",
           "properties": [
             {
-              "name": "dynamicTab",
-              "type": "Object",
-              "description": "",
+              "name": "fitParent",
+              "type": "Boolean",
+              "description": "Fully occupies parent element client area.\n\t\t\t",
               "privacy": "public",
               "sourceRange": {
                 "start": {
@@ -727,16 +921,568 @@
           "metadata": {},
           "sourceRange": {
             "start": {
+              "line": 14,
+              "column": 4
+            },
+            "end": {
+              "line": 33,
+              "column": 1
+            }
+          },
+          "privacy": "public",
+          "name": "BeruangBehavior",
+          "attributes": [],
+          "events": [],
+          "styling": {
+            "cssVariables": [],
+            "selectors": []
+          },
+          "slots": []
+        },
+        {
+          "description": "`BrownMaskBehavior`",
+          "summary": "",
+          "path": "node_modules/%40beruang/brown/brown-mask/brown-mask-behavior.js",
+          "properties": [
+            {
+              "name": "mask",
+              "type": "Boolean",
+              "description": "Show masker.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 22,
+                  "column": 3
+                },
+                "end": {
+                  "line": 25,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "maskMessage",
+              "type": "String",
+              "description": "Masker label.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 30,
+                  "column": 3
+                },
+                "end": {
+                  "line": 32,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            }
+          ],
+          "methods": [],
+          "staticMethods": [],
+          "demos": [],
+          "metadata": {},
+          "sourceRange": {
+            "start": {
+              "line": 15,
+              "column": 4
+            },
+            "end": {
+              "line": 56,
+              "column": 1
+            }
+          },
+          "privacy": "public",
+          "name": "BrownMaskBehavior",
+          "attributes": [],
+          "events": [],
+          "styling": {
+            "cssVariables": [],
+            "selectors": []
+          },
+          "slots": []
+        },
+        {
+          "description": "`BrownTabBehavior`",
+          "summary": "",
+          "path": "node_modules/%40beruang/brown/brown-tab/brown-tab-behavior.js",
+          "properties": [
+            {
+              "name": "dynamicTab",
+              "type": "Boolean",
+              "description": "Applies left-indent on tab item bar.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 24,
+                  "column": 3
+                },
+                "end": {
+                  "line": 28,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            }
+          ],
+          "methods": [],
+          "staticMethods": [],
+          "demos": [],
+          "metadata": {},
+          "sourceRange": {
+            "start": {
               "line": 17,
               "column": 4
             },
             "end": {
-              "line": 209,
+              "line": 214,
               "column": 1
             }
           },
           "privacy": "public",
           "name": "BrownTabBehavior",
+          "attributes": [],
+          "events": [],
+          "styling": {
+            "cssVariables": [],
+            "selectors": []
+          },
+          "slots": []
+        },
+        {
+          "description": "`PolarBehavior`",
+          "summary": "",
+          "path": "node_modules/%40beruang/polar/polar-behavior.js",
+          "properties": [
+            {
+              "name": "noWrap",
+              "type": "Boolean",
+              "description": "Does not wrap child element overflows in main axis direction.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 22,
+                  "column": 3
+                },
+                "end": {
+                  "line": 26,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "overflowXVisible",
+              "type": "Boolean",
+              "description": "Shows overflowed child element portion in horizontal direction.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 31,
+                  "column": 3
+                },
+                "end": {
+                  "line": 35,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "overflowXHidden",
+              "type": "Boolean",
+              "description": "Hides overflowed child element portion in horizontal direction.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 40,
+                  "column": 3
+                },
+                "end": {
+                  "line": 44,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "overflowXScroll",
+              "type": "Boolean",
+              "description": "Always shows horizontal scroller.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 49,
+                  "column": 3
+                },
+                "end": {
+                  "line": 53,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "overflowXAuto",
+              "type": "Boolean",
+              "description": "Only shows horizontal scroller when child element overflows.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 58,
+                  "column": 3
+                },
+                "end": {
+                  "line": 62,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "overflowYVisible",
+              "type": "Boolean",
+              "description": "Shows overflowed child element portion in vertical direction.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 67,
+                  "column": 3
+                },
+                "end": {
+                  "line": 71,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "overflowYHidden",
+              "type": "Boolean",
+              "description": "Hides overflowed child element portion in vertical direction.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 76,
+                  "column": 3
+                },
+                "end": {
+                  "line": 80,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "overflowYScroll",
+              "type": "Boolean",
+              "description": "Always shows vertical scroller.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 85,
+                  "column": 3
+                },
+                "end": {
+                  "line": 89,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "overflowYAuto",
+              "type": "Boolean",
+              "description": "Only shows vertical scroller when child element overflows.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 94,
+                  "column": 3
+                },
+                "end": {
+                  "line": 98,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "alignStart",
+              "type": "Boolean",
+              "description": "Child elements are packed toward the start of main axis line.\n\n`oooo oooo ---- ---- ---- ---- ---- ----`\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 105,
+                  "column": 3
+                },
+                "end": {
+                  "line": 109,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "alignEnd",
+              "type": "Boolean",
+              "description": "Child elements are packed toward the end of main axis line.\n\n`---- ---- ---- ---- ---- ---- oooo oooo oooo`\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 116,
+                  "column": 3
+                },
+                "end": {
+                  "line": 120,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "alignCenter",
+              "type": "Boolean",
+              "description": "Child elements are centered along the main axis line.\n\n`---- ---- ---- oooo oooo oooo ---- ---- ----`\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 127,
+                  "column": 3
+                },
+                "end": {
+                  "line": 131,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "alignSpaceBetween",
+              "type": "Boolean",
+              "description": "Child elements are evenly distributed in the main axis line. First item is on the start line, last item on the end line.\n\n`oooo ---- ---- ---- oooo ---- ---- ---- oooo`\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 138,
+                  "column": 3
+                },
+                "end": {
+                  "line": 142,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "alignSpaceAround",
+              "type": "Boolean",
+              "description": "Child elements are evenly distributed in the main axis line with equal space around them.\n\n`---- oooo ---- oooo ---- oooo ----`\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 149,
+                  "column": 3
+                },
+                "end": {
+                  "line": 153,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "crossAlignStart",
+              "type": "Boolean",
+              "description": "Child elements are packed toward the start of cross axis line.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 158,
+                  "column": 3
+                },
+                "end": {
+                  "line": 162,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "crossAlignEnd",
+              "type": "Boolean",
+              "description": "Child element are packed toward the end of cross axis line.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 167,
+                  "column": 3
+                },
+                "end": {
+                  "line": 171,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "crossAlignCenter",
+              "type": "Boolean",
+              "description": "Child element are centered along the cross axis line.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 176,
+                  "column": 3
+                },
+                "end": {
+                  "line": 180,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "crossAlignStretch",
+              "type": "Boolean",
+              "description": "Stretches child element to fill the container in the cross axis direction.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 185,
+                  "column": 3
+                },
+                "end": {
+                  "line": 189,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            },
+            {
+              "name": "crossAlignBaseline",
+              "type": "Boolean",
+              "description": "Child items are aligned such as their baselines align in the cross axis direction.\n\t\t\t",
+              "privacy": "public",
+              "sourceRange": {
+                "start": {
+                  "line": 194,
+                  "column": 3
+                },
+                "end": {
+                  "line": 198,
+                  "column": 4
+                }
+              },
+              "metadata": {
+                "polymer": {
+                  "readOnly": false
+                }
+              }
+            }
+          ],
+          "methods": [],
+          "staticMethods": [],
+          "demos": [],
+          "metadata": {},
+          "sourceRange": {
+            "start": {
+              "line": 15,
+              "column": 4
+            },
+            "end": {
+              "line": 255,
+              "column": 1
+            }
+          },
+          "privacy": "public",
+          "name": "PolarBehavior",
           "attributes": [],
           "events": [],
           "styling": {
@@ -752,867 +1498,27 @@
     {
       "description": "",
       "summary": "",
-      "path": "node_modules/%40beruang/mvp/abstract-presenter.js",
-      "properties": [],
-      "methods": [
-        {
-          "name": "start",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 5,
-              "column": 2
-            },
-            "end": {
-              "line": 7,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "singleWidgetContainer"
-            },
-            {
-              "name": "initial"
-            },
-            {
-              "name": "data"
-            }
-          ],
-          "return": {
-            "type": "void"
-          }
-        },
-        {
-          "name": "isSingleTon",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 9,
-              "column": 2
-            },
-            "end": {
-              "line": 11,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": []
-        },
-        {
-          "name": "isHistory",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 13,
-              "column": 2
-            },
-            "end": {
-              "line": 15,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": []
-        },
-        {
-          "name": "mayLeave",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 17,
-              "column": 2
-            },
-            "end": {
-              "line": 19,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "callback"
-            }
-          ],
-          "return": {
-            "type": "void"
-          }
-        },
-        {
-          "name": "close",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 21,
-              "column": 2
-            },
-            "end": {
-              "line": 21,
-              "column": 12
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "void"
-          }
-        }
-      ],
-      "staticMethods": [],
-      "demos": [],
-      "metadata": {},
-      "sourceRange": {
-        "start": {
-          "line": 0,
-          "column": 7
-        },
-        "end": {
-          "line": 22,
-          "column": 1
-        }
-      },
-      "privacy": "public",
-      "name": "AbstractPresenter"
-    },
-    {
-      "description": "",
-      "summary": "",
-      "path": "src/home/home-presenter.js",
-      "properties": [],
-      "methods": [
-        {
-          "name": "start",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 7,
-              "column": 4
-            },
-            "end": {
-              "line": 10,
-              "column": 5
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "singleWidgetContainer"
-            },
-            {
-              "name": "initial"
-            },
-            {
-              "name": "data"
-            }
-          ],
-          "return": {
-            "type": "void"
-          }
-        },
-        {
-          "name": "isSingleTon",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
-            "start": {
-              "line": 9,
-              "column": 2
-            },
-            "end": {
-              "line": 11,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AbstractPresenter"
-        },
-        {
-          "name": "isHistory",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
-            "start": {
-              "line": 13,
-              "column": 2
-            },
-            "end": {
-              "line": 15,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AbstractPresenter"
-        },
-        {
-          "name": "mayLeave",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
-            "start": {
-              "line": 17,
-              "column": 2
-            },
-            "end": {
-              "line": 19,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "callback"
-            }
-          ],
-          "return": {
-            "type": "void"
-          },
-          "inheritedFrom": "AbstractPresenter"
-        },
-        {
-          "name": "close",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
-            "start": {
-              "line": 21,
-              "column": 2
-            },
-            "end": {
-              "line": 21,
-              "column": 12
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "void"
-          },
-          "inheritedFrom": "AbstractPresenter"
-        }
-      ],
-      "staticMethods": [],
-      "demos": [],
-      "metadata": {},
-      "sourceRange": {
-        "start": {
-          "line": 2,
-          "column": 15
-        },
-        "end": {
-          "line": 11,
-          "column": 1
-        }
-      },
-      "privacy": "public",
-      "superclass": "AbstractPresenter",
-      "name": "HomePresenter"
-    },
-    {
-      "description": "",
-      "summary": "",
-      "path": "node_modules/%40beruang/mvp/abstract-view.js",
-      "properties": [],
-      "methods": [
-        {
-          "name": "asyncWidget",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 4,
-              "column": 2
-            },
-            "end": {
-              "line": 6,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "fReady"
-            }
-          ],
-          "return": {
-            "type": "void"
-          }
-        }
-      ],
-      "staticMethods": [],
-      "demos": [],
-      "metadata": {},
-      "sourceRange": {
-        "start": {
-          "line": 0,
-          "column": 7
-        },
-        "end": {
-          "line": 7,
-          "column": 1
-        }
-      },
-      "privacy": "public",
-      "name": "AbstractView"
-    },
-    {
-      "description": "",
-      "summary": "",
-      "path": "src/home/home-view-phone.js",
-      "properties": [],
-      "methods": [
-        {
-          "name": "asyncWidget",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 7,
-              "column": 2
-            },
-            "end": {
-              "line": 30,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "fReady"
-            }
-          ]
-        }
-      ],
-      "staticMethods": [],
-      "demos": [],
-      "metadata": {},
-      "sourceRange": {
-        "start": {
-          "line": 2,
-          "column": 15
-        },
-        "end": {
-          "line": 31,
-          "column": 1
-        }
-      },
-      "privacy": "public",
-      "superclass": "AbstractView",
-      "name": "HomeView"
-    },
-    {
-      "description": "",
-      "summary": "",
-      "path": "src/home/home-view-desktop.js",
-      "properties": [],
-      "methods": [
-        {
-          "name": "asyncWidget",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 7,
-              "column": 2
-            },
-            "end": {
-              "line": 30,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "fReady"
-            }
-          ]
-        }
-      ],
-      "staticMethods": [],
-      "demos": [],
-      "metadata": {},
-      "sourceRange": {
-        "start": {
-          "line": 2,
-          "column": 15
-        },
-        "end": {
-          "line": 31,
-          "column": 1
-        }
-      },
-      "privacy": "public",
-      "superclass": "AbstractView",
-      "name": "HomeView"
-    },
-    {
-      "description": "",
-      "summary": "",
-      "path": "src/home2/home2-presenter.js",
-      "properties": [],
-      "methods": [
-        {
-          "name": "start",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 7,
-              "column": 4
-            },
-            "end": {
-              "line": 10,
-              "column": 5
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "singleWidgetContainer"
-            },
-            {
-              "name": "initial"
-            },
-            {
-              "name": "data"
-            }
-          ],
-          "return": {
-            "type": "void"
-          }
-        },
-        {
-          "name": "isSingleTon",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
-            "start": {
-              "line": 9,
-              "column": 2
-            },
-            "end": {
-              "line": 11,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AbstractPresenter"
-        },
-        {
-          "name": "isHistory",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
-            "start": {
-              "line": 13,
-              "column": 2
-            },
-            "end": {
-              "line": 15,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AbstractPresenter"
-        },
-        {
-          "name": "mayLeave",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
-            "start": {
-              "line": 17,
-              "column": 2
-            },
-            "end": {
-              "line": 19,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "callback"
-            }
-          ],
-          "return": {
-            "type": "void"
-          },
-          "inheritedFrom": "AbstractPresenter"
-        },
-        {
-          "name": "close",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
-            "start": {
-              "line": 21,
-              "column": 2
-            },
-            "end": {
-              "line": 21,
-              "column": 12
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "void"
-          },
-          "inheritedFrom": "AbstractPresenter"
-        }
-      ],
-      "staticMethods": [],
-      "demos": [],
-      "metadata": {},
-      "sourceRange": {
-        "start": {
-          "line": 2,
-          "column": 15
-        },
-        "end": {
-          "line": 11,
-          "column": 1
-        }
-      },
-      "privacy": "public",
-      "superclass": "AbstractPresenter",
-      "name": "Home2Presenter"
-    },
-    {
-      "description": "",
-      "summary": "",
-      "path": "src/home2/home2-view-desktop.js",
-      "properties": [],
-      "methods": [
-        {
-          "name": "asyncWidget",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 7,
-              "column": 2
-            },
-            "end": {
-              "line": 30,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "fReady"
-            }
-          ]
-        }
-      ],
-      "staticMethods": [],
-      "demos": [],
-      "metadata": {},
-      "sourceRange": {
-        "start": {
-          "line": 2,
-          "column": 15
-        },
-        "end": {
-          "line": 31,
-          "column": 1
-        }
-      },
-      "privacy": "public",
-      "superclass": "AbstractView",
-      "name": "Home2View"
-    },
-    {
-      "description": "",
-      "summary": "",
-      "path": "src/home2/home2-view-phone.js",
-      "properties": [],
-      "methods": [
-        {
-          "name": "asyncWidget",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 7,
-              "column": 2
-            },
-            "end": {
-              "line": 30,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "fReady"
-            }
-          ]
-        }
-      ],
-      "staticMethods": [],
-      "demos": [],
-      "metadata": {},
-      "sourceRange": {
-        "start": {
-          "line": 2,
-          "column": 15
-        },
-        "end": {
-          "line": 31,
-          "column": 1
-        }
-      },
-      "privacy": "public",
-      "superclass": "AbstractView",
-      "name": "Home2View"
-    },
-    {
-      "description": "",
-      "summary": "",
-      "path": "src/home3/home3-presenter.js",
-      "properties": [],
-      "methods": [
-        {
-          "name": "start",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 7,
-              "column": 4
-            },
-            "end": {
-              "line": 10,
-              "column": 5
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "singleWidgetContainer"
-            },
-            {
-              "name": "initial"
-            },
-            {
-              "name": "data"
-            }
-          ],
-          "return": {
-            "type": "void"
-          }
-        },
-        {
-          "name": "isSingleTon",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
-            "start": {
-              "line": 9,
-              "column": 2
-            },
-            "end": {
-              "line": 11,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AbstractPresenter"
-        },
-        {
-          "name": "isHistory",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
-            "start": {
-              "line": 13,
-              "column": 2
-            },
-            "end": {
-              "line": 15,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AbstractPresenter"
-        },
-        {
-          "name": "mayLeave",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 12,
-              "column": 4
-            },
-            "end": {
-              "line": 14,
-              "column": 5
-            }
-          },
-          "metadata": {},
-          "params": []
-        },
-        {
-          "name": "close",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../../node_modules/%40beruang/mvp/abstract-presenter.js",
-            "start": {
-              "line": 21,
-              "column": 2
-            },
-            "end": {
-              "line": 21,
-              "column": 12
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "void"
-          },
-          "inheritedFrom": "AbstractPresenter"
-        }
-      ],
-      "staticMethods": [],
-      "demos": [],
-      "metadata": {},
-      "sourceRange": {
-        "start": {
-          "line": 2,
-          "column": 15
-        },
-        "end": {
-          "line": 15,
-          "column": 1
-        }
-      },
-      "privacy": "public",
-      "superclass": "AbstractPresenter",
-      "name": "Home3Presenter"
-    },
-    {
-      "description": "",
-      "summary": "",
-      "path": "src/home3/home3-view-desktop.js",
-      "properties": [],
-      "methods": [
-        {
-          "name": "asyncWidget",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 7,
-              "column": 2
-            },
-            "end": {
-              "line": 30,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "fReady"
-            }
-          ]
-        }
-      ],
-      "staticMethods": [],
-      "demos": [],
-      "metadata": {},
-      "sourceRange": {
-        "start": {
-          "line": 2,
-          "column": 15
-        },
-        "end": {
-          "line": 31,
-          "column": 1
-        }
-      },
-      "privacy": "public",
-      "superclass": "AbstractView",
-      "name": "Home3View"
-    },
-    {
-      "description": "",
-      "summary": "",
-      "path": "src/home3/home3-view-phone.js",
-      "properties": [],
-      "methods": [
-        {
-          "name": "asyncWidget",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 7,
-              "column": 2
-            },
-            "end": {
-              "line": 30,
-              "column": 3
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "fReady"
-            }
-          ]
-        }
-      ],
-      "staticMethods": [],
-      "demos": [],
-      "metadata": {},
-      "sourceRange": {
-        "start": {
-          "line": 2,
-          "column": 15
-        },
-        "end": {
-          "line": 31,
-          "column": 1
-        }
-      },
-      "privacy": "public",
-      "superclass": "AbstractView",
-      "name": "Home3View"
-    },
-    {
-      "description": "",
-      "summary": "",
       "path": "node_modules/%40beruang/beruang-behavior.js",
-      "properties": [],
+      "properties": [
+        {
+          "name": "fitParent",
+          "type": "Boolean",
+          "description": "Fully occupies parent element client area.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 21,
+              "column": 3
+            },
+            "end": {
+              "line": 25,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "BeruangBehavior"
+        }
+      ],
       "methods": [
         {
           "name": "ready",
@@ -1620,11 +1526,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 22,
+              "line": 29,
               "column": 1
             },
             "end": {
-              "line": 25,
+              "line": 32,
               "column": 2
             }
           },
@@ -1640,11 +1546,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 11,
+          "line": 15,
           "column": 0
         },
         "end": {
-          "line": 26,
+          "line": 33,
           "column": 1
         }
       },
@@ -1676,20 +1582,107 @@
     {
       "description": "",
       "summary": "",
-      "path": "node_modules/%40beruang/brown/brown-tab/brown-tab-behavior.js",
+      "path": "node_modules/%40beruang/brown/brown-mask/brown-mask-behavior.js",
       "properties": [
         {
-          "name": "dynamicTab",
-          "type": "Object",
-          "description": "",
+          "name": "mask",
+          "type": "Boolean",
+          "description": "Show masker.\n\t\t\t",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 21,
+              "line": 22,
               "column": 3
             },
             "end": {
               "line": 25,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "BrownMaskBehavior"
+        },
+        {
+          "name": "maskMessage",
+          "type": "String",
+          "description": "Masker label.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 30,
+              "column": 3
+            },
+            "end": {
+              "line": 32,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "BrownMaskBehavior"
+        }
+      ],
+      "methods": [
+        {
+          "name": "_onMask",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 42,
+              "column": 1
+            },
+            "end": {
+              "line": 55,
+              "column": 2
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "mask"
+            },
+            {
+              "name": "message"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 16,
+          "column": 0
+        },
+        "end": {
+          "line": 56,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "base"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "node_modules/%40beruang/brown/brown-tab/brown-tab-behavior.js",
+      "properties": [
+        {
+          "name": "dynamicTab",
+          "type": "Boolean",
+          "description": "Applies left-indent on tab item bar.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 24,
+              "column": 3
+            },
+            "end": {
+              "line": 28,
               "column": 4
             }
           },
@@ -1704,11 +1697,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 29,
+              "line": 32,
               "column": 1
             },
             "end": {
-              "line": 65,
+              "line": 70,
               "column": 2
             }
           },
@@ -1724,11 +1717,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 67,
+              "line": 72,
               "column": 1
             },
             "end": {
-              "line": 71,
+              "line": 76,
               "column": 2
             }
           },
@@ -1744,11 +1737,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 73,
+              "line": 78,
               "column": 1
             },
             "end": {
-              "line": 76,
+              "line": 81,
               "column": 2
             }
           },
@@ -1764,11 +1757,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 78,
+              "line": 83,
               "column": 1
             },
             "end": {
-              "line": 85,
+              "line": 90,
               "column": 2
             }
           },
@@ -1785,11 +1778,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 88,
+              "line": 93,
               "column": 1
             },
             "end": {
-              "line": 99,
+              "line": 104,
               "column": 2
             }
           },
@@ -1809,11 +1802,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 102,
+              "line": 107,
               "column": 1
             },
             "end": {
-              "line": 111,
+              "line": 116,
               "column": 2
             }
           },
@@ -1836,11 +1829,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 114,
+              "line": 119,
               "column": 1
             },
             "end": {
-              "line": 128,
+              "line": 133,
               "column": 2
             }
           },
@@ -1860,11 +1853,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 130,
+              "line": 135,
               "column": 1
             },
             "end": {
-              "line": 135,
+              "line": 140,
               "column": 2
             }
           },
@@ -1880,11 +1873,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 137,
+              "line": 142,
               "column": 1
             },
             "end": {
-              "line": 164,
+              "line": 169,
               "column": 2
             }
           },
@@ -1904,11 +1897,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 166,
+              "line": 171,
               "column": 1
             },
             "end": {
-              "line": 179,
+              "line": 184,
               "column": 2
             }
           },
@@ -1928,11 +1921,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 181,
+              "line": 186,
               "column": 1
             },
             "end": {
-              "line": 195,
+              "line": 200,
               "column": 2
             }
           },
@@ -1952,11 +1945,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 198,
+              "line": 203,
               "column": 1
             },
             "end": {
-              "line": 200,
+              "line": 205,
               "column": 2
             }
           },
@@ -1976,11 +1969,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 202,
+              "line": 207,
               "column": 1
             },
             "end": {
-              "line": 204,
+              "line": 209,
               "column": 2
             }
           },
@@ -2000,11 +1993,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 206,
+              "line": 211,
               "column": 1
             },
             "end": {
-              "line": 208,
+              "line": 213,
               "column": 2
             }
           },
@@ -2031,7 +2024,461 @@
           "column": 0
         },
         "end": {
-          "line": 209,
+          "line": 214,
+          "column": 1
+        }
+      },
+      "privacy": "public",
+      "superclass": "base"
+    },
+    {
+      "description": "",
+      "summary": "",
+      "path": "node_modules/%40beruang/polar/polar-behavior.js",
+      "properties": [
+        {
+          "name": "noWrap",
+          "type": "Boolean",
+          "description": "Does not wrap child element overflows in main axis direction.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 22,
+              "column": 3
+            },
+            "end": {
+              "line": 26,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "overflowXVisible",
+          "type": "Boolean",
+          "description": "Shows overflowed child element portion in horizontal direction.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 31,
+              "column": 3
+            },
+            "end": {
+              "line": 35,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "overflowXHidden",
+          "type": "Boolean",
+          "description": "Hides overflowed child element portion in horizontal direction.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 40,
+              "column": 3
+            },
+            "end": {
+              "line": 44,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "overflowXScroll",
+          "type": "Boolean",
+          "description": "Always shows horizontal scroller.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 49,
+              "column": 3
+            },
+            "end": {
+              "line": 53,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "overflowXAuto",
+          "type": "Boolean",
+          "description": "Only shows horizontal scroller when child element overflows.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 58,
+              "column": 3
+            },
+            "end": {
+              "line": 62,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "overflowYVisible",
+          "type": "Boolean",
+          "description": "Shows overflowed child element portion in vertical direction.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 67,
+              "column": 3
+            },
+            "end": {
+              "line": 71,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "overflowYHidden",
+          "type": "Boolean",
+          "description": "Hides overflowed child element portion in vertical direction.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 76,
+              "column": 3
+            },
+            "end": {
+              "line": 80,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "overflowYScroll",
+          "type": "Boolean",
+          "description": "Always shows vertical scroller.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 85,
+              "column": 3
+            },
+            "end": {
+              "line": 89,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "overflowYAuto",
+          "type": "Boolean",
+          "description": "Only shows vertical scroller when child element overflows.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 94,
+              "column": 3
+            },
+            "end": {
+              "line": 98,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "alignStart",
+          "type": "Boolean",
+          "description": "Child elements are packed toward the start of main axis line.\n\n`oooo oooo ---- ---- ---- ---- ---- ----`\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 105,
+              "column": 3
+            },
+            "end": {
+              "line": 109,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "alignEnd",
+          "type": "Boolean",
+          "description": "Child elements are packed toward the end of main axis line.\n\n`---- ---- ---- ---- ---- ---- oooo oooo oooo`\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 116,
+              "column": 3
+            },
+            "end": {
+              "line": 120,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "alignCenter",
+          "type": "Boolean",
+          "description": "Child elements are centered along the main axis line.\n\n`---- ---- ---- oooo oooo oooo ---- ---- ----`\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 127,
+              "column": 3
+            },
+            "end": {
+              "line": 131,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "alignSpaceBetween",
+          "type": "Boolean",
+          "description": "Child elements are evenly distributed in the main axis line. First item is on the start line, last item on the end line.\n\n`oooo ---- ---- ---- oooo ---- ---- ---- oooo`\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 138,
+              "column": 3
+            },
+            "end": {
+              "line": 142,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "alignSpaceAround",
+          "type": "Boolean",
+          "description": "Child elements are evenly distributed in the main axis line with equal space around them.\n\n`---- oooo ---- oooo ---- oooo ----`\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 149,
+              "column": 3
+            },
+            "end": {
+              "line": 153,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "crossAlignStart",
+          "type": "Boolean",
+          "description": "Child elements are packed toward the start of cross axis line.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 158,
+              "column": 3
+            },
+            "end": {
+              "line": 162,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "crossAlignEnd",
+          "type": "Boolean",
+          "description": "Child element are packed toward the end of cross axis line.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 167,
+              "column": 3
+            },
+            "end": {
+              "line": 171,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "crossAlignCenter",
+          "type": "Boolean",
+          "description": "Child element are centered along the cross axis line.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 176,
+              "column": 3
+            },
+            "end": {
+              "line": 180,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "crossAlignStretch",
+          "type": "Boolean",
+          "description": "Stretches child element to fill the container in the cross axis direction.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 185,
+              "column": 3
+            },
+            "end": {
+              "line": 189,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        },
+        {
+          "name": "crossAlignBaseline",
+          "type": "Boolean",
+          "description": "Child items are aligned such as their baselines align in the cross axis direction.\n\t\t\t",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 194,
+              "column": 3
+            },
+            "end": {
+              "line": 198,
+              "column": 4
+            }
+          },
+          "metadata": {},
+          "inheritedFrom": "PolarBehavior"
+        }
+      ],
+      "methods": [
+        {
+          "name": "connectedCallback",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 202,
+              "column": 1
+            },
+            "end": {
+              "line": 213,
+              "column": 2
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "disconnectedCallback",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 215,
+              "column": 1
+            },
+            "end": {
+              "line": 218,
+              "column": 2
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_flex",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 220,
+              "column": 1
+            },
+            "end": {
+              "line": 239,
+              "column": 2
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "el"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        },
+        {
+          "name": "_selfAlign",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 241,
+              "column": 1
+            },
+            "end": {
+              "line": 254,
+              "column": 2
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "el"
+            }
+          ],
+          "return": {
+            "type": "void"
+          }
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 16,
+          "column": 0
+        },
+        "end": {
+          "line": 255,
           "column": 1
         }
       },
