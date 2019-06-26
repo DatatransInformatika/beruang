@@ -177,7 +177,13 @@ function(){return this}()||Function("return this")());</script>
   </head>
   <body onload="_onload()">
 
-      <polar-border></polar-border>
+      <polar-border fit-parent="" north-resizable="" south-resizable="" west-resizable="" east-resizable="">
+        <div style="background-color:red" slot="north">north</div>
+        <div style="background-color:blue" slot="south">south</div>
+        <div style="background-color:cyan" slot="west">west</div>
+        <div style="background-color:magenta" slot="center">center</div>
+        <div style="background-color:yellow" slot="east">east</div>
+      </polar-border>
     <!--brown-label>Regular</brown-label-->
     <!--brown-tab-desktop fit-parent dynamic-tab>
       <brown-tabitem-desktop id="item1" active closable><iron-icon icon="add-shopping-cart"></iron-icon>header-1</brown-tabitem-desktop>
