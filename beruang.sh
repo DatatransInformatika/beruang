@@ -38,12 +38,12 @@ node_modules/@beruang/polar/*.js
 node_modules/@beruang/polar/**/*.js
 EOF`
 
-polarcolsources=`cat <<EOF
-node_modules/@beruang/polar/polar-col/*.js
+polarsimplesources=`cat <<EOF
+node_modules/@beruang/polar/polar-simple/*.js
 EOF`
 
-polarrowsources=`cat <<EOF
-node_modules/@beruang/polar/polar-row/*.js
+polarbordersources=`cat <<EOF
+node_modules/@beruang/polar/polar-border/*.js
 EOF`
 
 themesources=`cat <<EOF
@@ -213,42 +213,42 @@ build-es5-polar
 build-es6-polar
 }
 
-function build-es5-polar-col {
-rm -rf build/es5/node_modules/@beruang/polar/polar-col
-mkdir -p build/es5/src/node_modules/@beruang/polar/polar-col
-polymer build --name beruang-es5-polar-col --js-compile --js-transform-modules-to-amd --js-minify \
---sources ${polarcolsources}
+function build-es5-polar-simple {
+rm -rf build/es5/node_modules/@beruang/polar/polar-simple
+mkdir -p build/es5/src/node_modules/@beruang/polar/polar-simple
+polymer build --name beruang-es5-polar-simple --js-compile --js-transform-modules-to-amd --js-minify \
+--sources ${polarsimplesources}
 }
 
-function build-es6-polar-col {
-rm -rf build/es6/node_modules/@beruang/polar/polar-col
-mkdir -p build/es6/src/node_modules/@beruang/polar-col
-polymer build --name beruang-es6-polar-col --js-minify \
---sources ${polarcolsources}
+function build-es6-polar-simple {
+rm -rf build/es6/node_modules/@beruang/polar/polar-simple
+mkdir -p build/es6/src/node_modules/@beruang/polar-simple
+polymer build --name beruang-es6-polar-simple --js-minify \
+--sources ${polarsimplesources}
 }
 
-function build-polar-col {
-build-es5-polar-col
-build-es6-polar-col
+function build-polar-simple {
+build-es5-polar-simple
+build-es6-polar-simple
 }
 
-function build-es5-polar-row {
-rm -rf build/es5/node_modules/@beruang/polar/polar-row
-mkdir -p build/es5/src/node_modules/@beruang/polar/polar-row
-polymer build --name beruang-es5-polar-row --js-compile --js-transform-modules-to-amd --js-minify \
---sources ${polarrowsources}
+function build-es5-polar-border {
+rm -rf build/es5/node_modules/@beruang/polar/polar-border
+mkdir -p build/es5/src/node_modules/@beruang/polar/polar-border
+polymer build --name beruang-es5-polar-border --js-compile --js-transform-modules-to-amd --js-minify \
+--sources ${polarbordersources}
 }
 
-function build-es6-polar-row {
-rm -rf build/es6/node_modules/@beruang/polar/polar-row
-mkdir -p build/es6/src/node_modules/@beruang/polar-row
-polymer build --name beruang-es6-polar-col --js-minify \
---sources ${polarrowsources}
+function build-es6-polar-border {
+rm -rf build/es6/node_modules/@beruang/polar/polar-border
+mkdir -p build/es6/src/node_modules/@beruang/polar-border
+polymer build --name beruang-es6-polar-border --js-minify \
+--sources ${polarbordersources}
 }
 
-function build-polar-row {
-build-es5-polar-row
-build-es6-polar-row
+function build-polar-border {
+build-es5-polar-border
+build-es6-polar-border
 }
 
 function build-es5-theme {
@@ -310,8 +310,8 @@ case $1 in
 	brown-mask) build-brown-mask;;
 	mvp) build-mvp;;
 	polar) build-polar;;
-	polar-col) build-polar-col;;
-	polar-row) build-polar-row;;
+	polar-simple) build-polar-simple;;
+	polar-border) build-polar-border;;
 	theme) build-theme;;
 	tool) build-tool;;
 	*) build-all;;

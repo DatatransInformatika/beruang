@@ -34,9 +34,9 @@
   <script type="module" src="./node_modules/@polymer/iron-icons/iron-icons.js"></script>
 
   <script type="module" src="./node_modules/@beruang/beruang-behavior.js"></script>
-  <script type="module" src="./node_modules/@beruang/polar/polar-col/polar-col.js"></script>
-  <script type="module" src="./node_modules/@beruang/polar/polar-row/polar-row.js"></script>
-
+  <script type="module" src="./node_modules/@beruang/polar/polar-simple/polar-col.js"></script>
+  <script type="module" src="./node_modules/@beruang/polar/polar-simple/polar-row.js"></script>
+  <script type="module" src="./node_modules/@beruang/polar/polar-border/polar-border.js"></script>
 	<!-- at least a script tag with type "module" to force polymer build inject window.define in es5-amd compilation -->
 	<script type="module" src="./node_modules/@beruang/tool/beruang-factory.js"></script>
   <script>
@@ -66,6 +66,8 @@
 	</script>
   </head>
   <body onload="_onload()">
+
+      <polar-border></polar-border>
     <!--brown-label>Regular</brown-label-->
     <!--brown-tab-desktop fit-parent dynamic-tab>
       <brown-tabitem-desktop id="item1" active closable><iron-icon icon="add-shopping-cart"></iron-icon>header-1</brown-tabitem-desktop>
@@ -115,7 +117,7 @@
       <brown-tabitem-desktop id="item14" closable>header-14</brown-tabitem-desktop>
     </brown-tab-dynamic-desktop-->
 
-    <brown-tab-manual-desktop fit-parent dynamic-tab>
+    <!--brown-tab-manual-desktop fit-parent dynamic-tab>
       <brown-tabitem-desktop id="item1" closable><iron-icon icon="add-shopping-cart"></iron-icon>header-1</brown-tabitem-desktop>
       <brown-tabitem-desktop id="item2">header-2</brown-tabitem-desktop>
       <brown-tabitem-desktop id="item3" closable>header-3</brown-tabitem-desktop>
@@ -132,9 +134,9 @@
       <brown-tabitem-desktop id="item14" closable>header-14</brown-tabitem-desktop>
       <div slot="content" data-active-tab="item2">Content 1</div>
   </brown-tab-manual-desktop>
-    <!--brown-mask message="wait..."></brown-mask-->
+    <brown-mask message="wait..."></brown-mask-->
 
-    <script>
+    <!--script>
         var tab = document.querySelector("brown-tab-dynamic-desktop");//v
         if(tab) {
             tab.addEventListener("dynamic-content", function(e){
@@ -183,7 +185,6 @@
                 }
             });
         }
-    </script>
-
+    </script-->
   </body>
 </html>
