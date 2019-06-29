@@ -136,7 +136,6 @@ function(){return this}()||Function("return this")());</script>
         left:0px;
         margin:0px;
     }
-    .beruang-hide {visibility:hidden;}
 	</style>
 
   <!--script type="module" src="./node_modules/@beruang/brown/brown-label/brown-label.js"></script-->
@@ -178,12 +177,12 @@ function(){return this}()||Function("return this")());</script>
   </head>
   <body onload="_onload()">
 
-      <polar-border unresolved="" fit-parent="" north-resizable="" south-resizable="" west-resizable="" east-resizable="">
-        <div class="beruang-hide" style="background-color:red" slot="north">north</div>
-        <div class="beruang-hide" style="background-color:blue" slot="south">south</div>
-        <div class="beruang-hide" style="background-color:cyan" slot="west">west</div>
-        <div class="beruang-hide" style="background-color:magenta" slot="center">center</div>
-        <div class="beruang-hide" style="background-color:yellow" slot="east">east</div>
+      <polar-border fit-parent="" north-resizable="" south-resizable="" west-resizable="" east-resizable="" north="50" south="50" west="0.3" east="0.3">
+        <div style="background-color:red" slot="north">north</div>
+        <div style="background-color:blue" slot="south">south</div>
+        <div style="background-color:cyan" slot="west">west</div>
+        <div style="background-color:magenta" slot="center">center</div>
+        <div style="background-color:yellow" slot="east">east</div>
       </polar-border>
     <!--brown-label>Regular</brown-label-->
     <!--brown-tab-desktop fit-parent dynamic-tab>
