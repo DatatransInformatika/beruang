@@ -29,6 +29,10 @@ brownmasksources=`cat <<EOF
 node_modules/@beruang/brown/brown-mask/*.js
 EOF`
 
+brownresizemonitorsources=`cat <<EOF
+node_modules/@beruang/brown/brown-resizemonitor/*.js
+EOF`
+
 mvpsources=`cat <<EOF
 node_modules/@beruang/mvp/*.js
 EOF`
@@ -175,6 +179,25 @@ build-es5-brown-mask
 build-es6-brown-mask
 }
 
+function build-es5-brown-resizemonitor {
+rm -rf build/es5/node_modules/@beruang/brown/brown-resizemonitor
+mkdir -p build/es5/src/node_modules/@beruang/brown/brown-resizemonitor
+polymer build --name beruang-es5-brown-resizemonitor --js-compile --js-transform-modules-to-amd --js-minify \
+--sources ${brownresizemonitorsources}
+}
+
+function build-es6-brown-resizemonitor {
+rm -rf build/es6/node_modules/@beruang/brown/brown-resizemonitor
+mkdir -p build/es6/src/node_modules/@beruang/brown/brown-resizemonitor
+polymer build --name beruang-es6-brown-resizemonitor --js-minify \
+--sources ${brownresizemonitorsources}
+}
+
+function build-brown-resizemonitor {
+build-es5-brown-resizemonitor
+build-es6-brown-resizemonitor
+}
+
 function build-es5-mvp {
 rm -rf build/es5/node_modules/@beruang/mvp
 mkdir -p build/es5/src/node_modules/@beruang/mvp
@@ -308,6 +331,7 @@ case $1 in
 	brown-label) build-brown-label;;
 	brown-tab) build-brown-tab;;
 	brown-mask) build-brown-mask;;
+	brown-resizemonitor) build-brown-resizemonitor;;
 	mvp) build-mvp;;
 	polar) build-polar;;
 	polar-simple) build-polar-simple;;
