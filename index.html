@@ -37,6 +37,11 @@
   <script type="module" src="./node_modules/@beruang/polar/polar-simple/polar-col.js"></script>
   <script type="module" src="./node_modules/@beruang/polar/polar-simple/polar-row.js"></script>
   <script type="module" src="./node_modules/@beruang/polar/polar-border/polar-border.js"></script>
+
+  <script type="module" src="./node_modules/@beruang/black/black-field.js"></script>
+  <script type="module" src="./node_modules/@beruang/black/black-tuple.js"></script>
+  <script type="module" src="./node_modules/@beruang/black/black-store.js"></script>
+
 	<!-- at least a script tag with type "module" to force polymer build inject window.define in es5-amd compilation -->
 	<script type="module" src="./node_modules/@beruang/tool/beruang-factory.js"></script>
   <script>
@@ -67,7 +72,20 @@
   </head>
   <body onload="_onload()">
 
-      <polar-border fit-parent west-resizable  west=0.3>
+      <black-store id="mystore" key="id">
+      	<black-tuple id="tuple1">
+      		<black-field key="id" value="1"></black-field>
+      		<black-field key="barcode" value="ABC"></black-field>
+      		<black-field key="nama" value="Bakpia"></black-field>
+      	</black-tuple>
+      	<black-tuple id="tuple2">
+      		<black-field key="id" value="2"></black-field>
+      		<black-field key="barcode" value="DEF"></black-field>
+      		<black-field key="nama" value="Donat"></black-field>
+      	</black-tuple>
+      </black-store>
+
+      <!--polar-border fit-parent west-resizable  west=0.3>
         <div style="background-color:#cbd3f7" slot="west">west</div>
         <brown-tab-desktop dynamic-tab slot="center">
               <brown-tabitem-desktop id="item1" active closable><iron-icon icon="add-shopping-cart"></iron-icon>header-1</brown-tabitem-desktop>
@@ -99,7 +117,7 @@
               <div slot="content" data-tab="item13">Content 13</div>
               <div slot="content" data-tab="item14">Content 14</div>
         </brown-tab-desktop>
-    </polar-border>
+    </polar-border-->
 
       <!--polar-border fit-parent
         north-resizable south-resizable west-resizable east-resizable

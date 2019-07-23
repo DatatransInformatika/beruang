@@ -151,6 +151,11 @@ function(){return this}()||Function("return this")());</script>
   <script>define(['./node_modules/@beruang/polar/polar-simple/polar-col.js']);</script>
   <script>define(['./node_modules/@beruang/polar/polar-simple/polar-row.js']);</script>
   <script>define(['./node_modules/@beruang/polar/polar-border/polar-border.js']);</script>
+
+  <script>define(['./node_modules/@beruang/black/black-field.js']);</script>
+  <script>define(['./node_modules/@beruang/black/black-tuple.js']);</script>
+  <script>define(['./node_modules/@beruang/black/black-store.js']);</script>
+
 	<!-- at least a script tag with type "module" to force polymer build inject window.define in es5-amd compilation -->
 	<script>define(['./node_modules/@beruang/tool/beruang-factory.js']);</script>
   <script>function _onload(){/*var x = setInterval( function() {
@@ -177,23 +182,36 @@ function(){return this}()||Function("return this")());</script>
   </head>
   <body onload="_onload()">
 
-      <polar-border fit-parent="" west-resizable="" west="0.3">
+      <black-store id="mystore" key="id">
+      	<black-tuple id="tuple1">
+      		<black-field key="id" value="1"></black-field>
+      		<black-field key="barcode" value="ABC"></black-field>
+      		<black-field key="nama" value="Bakpia"></black-field>
+      	</black-tuple>
+      	<black-tuple id="tuple2">
+      		<black-field key="id" value="2"></black-field>
+      		<black-field key="barcode" value="DEF"></black-field>
+      		<black-field key="nama" value="Donat"></black-field>
+      	</black-tuple>
+      </black-store>
+
+      <!--polar-border fit-parent west-resizable  west=0.3>
         <div style="background-color:#cbd3f7" slot="west">west</div>
-        <brown-tab-desktop dynamic-tab="" slot="center">
-              <brown-tabitem-desktop id="item1" active="" closable=""><iron-icon icon="add-shopping-cart"></iron-icon>header-1</brown-tabitem-desktop>
+        <brown-tab-desktop dynamic-tab slot="center">
+              <brown-tabitem-desktop id="item1" active closable><iron-icon icon="add-shopping-cart"></iron-icon>header-1</brown-tabitem-desktop>
               <brown-tabitem-desktop id="item2">header-2</brown-tabitem-desktop>
-              <brown-tabitem-desktop id="item3" closable="">header-3</brown-tabitem-desktop>
-              <brown-tabitem-desktop id="item4" closable="">header-4</brown-tabitem-desktop>
-              <brown-tabitem-desktop id="item5" closable="">header-5</brown-tabitem-desktop>
-              <brown-tabitem-desktop id="item6" closable="">header-6</brown-tabitem-desktop>
-              <brown-tabitem-desktop id="item7" closable="">header-7</brown-tabitem-desktop>
-              <brown-tabitem-desktop id="item8" closable="">header-8</brown-tabitem-desktop>
-              <brown-tabitem-desktop id="item9" closable="">header-9</brown-tabitem-desktop>
-              <brown-tabitem-desktop id="item10" closable="">header-10</brown-tabitem-desktop>
-              <brown-tabitem-desktop id="item11" closable="">header-11</brown-tabitem-desktop>
-              <brown-tabitem-desktop id="item12" closable="">header-12</brown-tabitem-desktop>
-              <brown-tabitem-desktop id="item13" closable="">header-13</brown-tabitem-desktop>
-              <brown-tabitem-desktop id="item14" closable="">header-14</brown-tabitem-desktop>
+              <brown-tabitem-desktop id="item3" closable>header-3</brown-tabitem-desktop>
+              <brown-tabitem-desktop id="item4" closable>header-4</brown-tabitem-desktop>
+              <brown-tabitem-desktop id="item5" closable>header-5</brown-tabitem-desktop>
+              <brown-tabitem-desktop id="item6" closable>header-6</brown-tabitem-desktop>
+              <brown-tabitem-desktop id="item7" closable>header-7</brown-tabitem-desktop>
+              <brown-tabitem-desktop id="item8" closable>header-8</brown-tabitem-desktop>
+              <brown-tabitem-desktop id="item9" closable>header-9</brown-tabitem-desktop>
+              <brown-tabitem-desktop id="item10" closable>header-10</brown-tabitem-desktop>
+              <brown-tabitem-desktop id="item11" closable>header-11</brown-tabitem-desktop>
+              <brown-tabitem-desktop id="item12" closable>header-12</brown-tabitem-desktop>
+              <brown-tabitem-desktop id="item13" closable>header-13</brown-tabitem-desktop>
+              <brown-tabitem-desktop id="item14" closable>header-14</brown-tabitem-desktop>
               <div slot="content" data-tab="item1">Content 1</div>
               <div slot="content" data-tab="item2">Content 2</div>
               <div slot="content" data-tab="item3">Content 3</div>
@@ -209,7 +227,7 @@ function(){return this}()||Function("return this")());</script>
               <div slot="content" data-tab="item13">Content 13</div>
               <div slot="content" data-tab="item14">Content 14</div>
         </brown-tab-desktop>
-    </polar-border>
+    </polar-border-->
 
       <!--polar-border fit-parent
         north-resizable south-resizable west-resizable east-resizable
